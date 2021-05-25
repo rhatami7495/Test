@@ -1,7 +1,22 @@
-plugins {
-    id 'com.android.library'
-    id 'kotlin-android'
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
+    }
 }
+apply plugin: 'com.github.dcendents.android-maven'
+group 'app.module.logmodule'
+version '0.0.1'
+
+
 
 android {
     compileSdkVersion 30
