@@ -13,7 +13,7 @@ buildscript {
     }
 }
 apply plugin: 'com.github.dcendents.android-maven'
-group 'app.module.logmodule'
+group 'app.module'
 version '0.0.1'
 
 
